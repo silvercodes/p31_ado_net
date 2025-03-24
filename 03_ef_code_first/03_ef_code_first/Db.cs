@@ -9,6 +9,7 @@ internal class Db: DbContext
 
     public Db()
     {
+        Database.EnsureDeleted();
         Database.EnsureCreated();
     }
 
